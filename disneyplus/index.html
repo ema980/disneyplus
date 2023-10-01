@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="modelo de página de Stream">
+    <meta name="author" content="Ema">
+    <!-- Estilos personalizados para esta plantilla -->
+    <link href="./carousel.css" rel="stylesheet">
+    <link href="./estilos.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <!-- Bootstrap núcleo CSS -->
+    <!--<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> reemplazo de archivo por un CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"> <!--iconos-->
+    <style>
+      a{
+        text-decoration: none;
+        color: grey;
+      }
+      footer{
+        background: black;
+      }
+    </style>
+    <title>Disney Plus</title>
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Disney plus</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./peliculas.html">Películas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./series.html">Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Documentales</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+  <main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner bg-dark">
+      <p id="tope">tope</p>
+      <div class="carousel-item active slide-uno">
+        <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="false" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>-->
+        <!--<img style="width: 50%;" src="./imagen/mov-1.jpg">-->
+      </div>
+      <div class="carousel-item slide-dos">
+        <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="./imagen/mov-2.jpg">-->
+      </div>
+      <div class="carousel-item slide-tres">
+        <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="./imagen/mov-3.jpg">-->
+       </div>
+       <div class="texto-fijo">
+        <p>Disfruta la magia de Disney plus para todas las edades</p>
+        <button class="bi bi-play repro" id="repro" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+        <button class="btn btn-dark">más info</button>
+       </div>
+    </div>
+    <button style="z-index: 5;" class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">siguiente</span>
+    </button>
+  </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <!-- Button trigger modal
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button>-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Disney Plus</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Reproductor en construcción, algo mágico sucederá pronto</p>
+            <img src="./imagen//disney.webp" class="disney">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <h3><a href="./peliculas.html">recomanedados para ti</a></h3>
+      <hr>
+      <div class="col-lg-3">
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-30 a la(s) 12.57.33.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-30 a la(s) 12.57.44.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-30 a la(s) 12.58.17.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-30 a la(s) 12.58.07.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+
+      <h3><a href="./peliculas.html">películas</a></h3>
+      <hr>
+      <div class="col-lg-3">
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-24 a la(s) 12.21.16.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <button type="button" class="btn btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-24 a la(s) 12.21.29.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-24 a la(s) 12.21.40.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-24 a la(s) 12.32.02.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+
+      <h3><a href="./series.html">series</a></h3>
+      <hr>
+      <div class="col-lg-3">
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-28 a la(s) 14.12.28.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-28 a la(s) 14.10.08.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-28 a la(s) 14.10.28.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-28 a la(s) 14.10.21.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+
+      <h3><a href="./documentales.html">documentales</a></h3>
+      <hr>
+      <div class="col-lg-3">
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-24 a la(s) 12.47.43.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-24 a la(s) 12.46.54.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-24 a la(s) 12.47.06.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+        <button type="button" class="btn"><img class="galeria" src="./img/Captura de Pantalla 2023-09-24 a la(s) 12.46.41.png"></button>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div>
+</main>
+  <footer>
+    <div class="footer">
+      <button class="btn btn-outline-info" id="arriba" href="#tope">volver arriba</button>
+      <p>&copy; Disney plus, LTD.</p>
+      <p>&middot; <a href="#">Privacidad</a> 
+      <p>&middot; <a href="./terminos.html">Términos y condiciones</a></p>
+    </div>
+  </footer>
+    <!--<script src="../assets/dist/js/bootstrap.bundle.min.js"></script> reemplazo de archivo javaScript por CDN-->
+    <script>
+      document.getElementById('arriba').addEventListener('click', ()=>{
+        const topeElement = document.getElementById('tope');
+        if(topeElement){
+          topeElement.scrollIntoView({behavior:'smooth'});
+        }
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

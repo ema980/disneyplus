@@ -1,0 +1,70 @@
+main{
+    background: #000;
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+  }
+  button{
+    box-shadow: #313945;
+  }
+  .galeria{
+    border-radius: 10px;
+    width: 80%;
+  }
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  .slide-uno{
+    background: url("./img/Captura de Pantalla 2023-09-30 a la(s) 14.39.23.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .slide-dos{
+    background: url("./img/Captura de Pantalla 2023-09-30 a la(s) 14.39.36.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .slide-tres{
+    background: url("./img/Captura de Pantalla 2023-09-30 a la(s) 14.39.09.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .texto-fijo{
+    position: absolute;
+    width: 15rem;
+    top: 70%;
+    left: 1%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding:10px;
+    border-radius: 5px;
+    color:aliceblue;
+    z-index: 10;
+  }
+  .repro{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+  }
+  .disney{
+    width: 8rem;
+  }
+  .modal-body{
+    text-align: center;
+  }
+  .footer{
+    text-align: center;
+  }
